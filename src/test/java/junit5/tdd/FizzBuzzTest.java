@@ -17,7 +17,7 @@ public class FizzBuzzTest {
     }
 
     @Test
-    public void should_return_3_when_count_of_given_3(){
+    public void should_return_fizz_when_count_of_given_3(){
         //given
         FizzBuzz fizzBuzz = new FizzBuzz();
         int inputNumber = 3;
@@ -28,7 +28,7 @@ public class FizzBuzzTest {
     }
 
     @Test
-    public void should_return_5_when_count_of_given_5(){
+    public void should_return_buzz_when_count_of_given_5(){
         //given
         FizzBuzz fizzBuzz = new FizzBuzz();
         int inputNumber = 5;
@@ -36,5 +36,16 @@ public class FizzBuzzTest {
         String output = fizzBuzz.play(inputNumber);
         //then
         Assertions.assertEquals("Buzz",output);
+    }
+
+    @Test
+    public void should_return_fizzbuzz_when_count_of_given_15(){
+        //given
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        int inputNumber = 15;
+        //when
+        String output = fizzBuzz.play(inputNumber);
+        //then
+        Assertions.assertEquals("FizzBuzz",output);
     }
 }
