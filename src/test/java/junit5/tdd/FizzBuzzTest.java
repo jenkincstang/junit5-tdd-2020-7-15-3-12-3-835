@@ -24,6 +24,6 @@ public class FizzBuzzTest {
         //when
         String output = fizzBuzz.play(inputNumber);
         //then
-        Assertions.assertEquals("3",output);
+        Assertions.assertEquals("Fizz",output);
     }
 }
