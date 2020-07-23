@@ -5,6 +5,6 @@ public class FizzBuzz {
         if (inputNumber % 3 == 0){
             return "Fizz";
         }
-        return "1";
+        return ""+inputNumber;
     }
 }
